@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 1. Header: Name, Home Icon, Navigation Bar -->
+  <header>
+    <!-- Home Icon -->
+    <a href="#home" id="home-icon" title="Home">🏠</a>
+    <!-- Name displayed at the top-left -->
+    <span id="profile-name">Sultan Aljunibi</span>
+
+    <!-- Navigation Bar -->
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project Details</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 2. About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="man.svg" alt="Profile Image" id="profile-img" />
+    <h3>Sultan Aljunibi</h3>
+    <p>
+      I am a web developer with experience in HTML, CSS, and JavaScript. I enjoy creating engaging user interfaces and delivering excellent user experiences.
+    </p>
+  </section>
+
+  <!-- 3. Project Details Section -->
+  <section id="projects">
+    <h2>Project Details</h2>
+    <div class="project-item">
+      <h3>Project One</h3>
+      <p>A brief description of your first project, e.g., an interactive learning website using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-item">
+      <h3>Project Two</h3>
+      <p>A brief description of your second project, e.g., a simple interest calculator application using JavaScript.</p>
+    </div>
+    <div class="project-item">
+      <h3>Project Three</h3>
+      <p>A brief description of your third project, e.g., a responsive landing page design.</p>
+    </div>
+  </section>
+
+  <!-- 4. Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill-item">
+        <img src="html.png" alt="HTML Logo" class="skill-logo" />
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <img src="css.png" alt="CSS Logo" class="skill-logo" />
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <img src="java.png" alt="JavaScript Logo" class="skill-logo" />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="React.png" alt="React Logo" class="skill-logo" />
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <img src="nodejs-inner.webp" alt="Node.js Logo" class="skill-logo" />
+        <span>Node.js</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <ul id="recommend-list">
+      <li class="rec-item">
+        <strong>Sarah Ahmed:</strong> Great work and easy to use. Highly recommend collaborating with him.
+      </li>
+      <li class="rec-item">
+        <strong>Mohammed Ali:</strong> Professional in design and page layout. Wishing him continued success.
+      </li>
+      <li class="rec-item">
+        <strong>Ahmed Al-Hashmi:</strong> Quick learner and adds creative touches to every project.
+      </li>
+    </ul>
+
+    <!-- Form to Add New Recommendation -->
+    <div id="add-recommendation">
+      <h3>Add a Recommendation</h3>
+      <textarea id="rec-input" placeholder="Your recommendation..." rows="3"></textarea>
+      <br />
+      <button id="rec-submit">Submit</button>
+    </div>
+  </section>
+
+  <!-- 6. Include JavaScript at the end of the body -->
+  <script src="script.js"></script>
+</body>
+</html>
